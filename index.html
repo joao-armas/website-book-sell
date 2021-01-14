@@ -16,20 +16,43 @@
   }
 
 
+  /* BUTTONS SECTION START */
+  .btn {
+    z-index: 2;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 100px;
 
-  #book-button {
-    width: 60px;
-    height: 60px;
-    background: url("bookLogo.png");
   }
 
-#book-button-size{
-  width: 60px;
-  height: 60px;
-}
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .books-read-digital-edition {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px;
+    margin-left: 600px;
+  }
+
+
+  .books-buy-phisical-edition {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+  }
+
+  /*BUTTONS SECTION END */
+
 
   #title-lendo-maria-gaspar {
-
     color: white;
     background: rgba(255, 255, 255, 0.3);
     padding: 20px;
@@ -39,25 +62,31 @@
     text-align: center;
     float: left;
     margin-left: 600px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
   }
-
-
 </style>
 
 <head>
   <meta charset="utf-8">
   <meta name="description"
     content="This is a website that, among other things, will be a link beetween the user and a buy page of the books from Maria Gaspar">
-  
-    
-    <div>
-      <article id="title-lendo-maria-gaspar"> Lendo Maria Gaspar</article>
-    </div>
- 
-    <div>
-      <button id="book-button"></button>
-    </div>
-    
+
+
+  <div>
+    <article id="title-lendo-maria-gaspar"> <b> Maria Gaspar </article>
+  </div>
+
+  <div>
+    <button class="btn books-read-digital-edition">
+      <b> Read </b>
+    </button>
+    <button class="btn books-buy-phisical-edition">
+      <b> &nbsp; Buy &nbsp; </b>
+    </button>
+  </div>
+
 </head>
 
 
